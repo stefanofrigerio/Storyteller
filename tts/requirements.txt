@@ -1,0 +1,18 @@
+# Text-to-Speech Dependencies
+
+# Google Cloud TTS (primary provider)
+google-cloud-texttospeech==2.14.1
+
+# Alternative providers (optional)
+# elevenlabs==0.2.24
+# azure-cognitiveservices-speech==1.31.0
+# boto3==1.28.25  # For AWS Polly
+
+# Async HTTP
+aiohttp==3.9.1
+
+# Audio manipulation
+pydub==0.25.1
+
+# Utilities
+python-dotenv==1.0.0

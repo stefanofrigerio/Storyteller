@@ -4,7 +4,7 @@ A mobile app that tracks you when you walk and suggests things to do in your sur
 
 ## Project Structure
 
-This project is organized into 4 main components:
+This project is organized into 5 main components:
 
 ### 1. Backend API (`/backend`)
 REST API service built with Python/FastAPI for:
@@ -35,6 +35,15 @@ Location intelligence service for:
 - Proximity detection
 - Area context (historical, cultural, commercial zones)
 
+### 5. Text-to-Speech Service (`/tts`)
+Audio narration service for hands-free storytelling:
+- Convert stories to natural speech
+- Multiple voice options and languages (Italian, English, etc.)
+- Voice customization (speed, pitch)
+- Audio caching for performance
+- Streaming support for long stories
+- Hands-free narration during walks
+
 ## Tech Stack
 
 - **Python 3.9+**
@@ -42,6 +51,7 @@ Location intelligence service for:
 - **FastAPI** for REST API
 - **PostgreSQL** for database
 - **Claude API** for LLM
+- **Google Cloud TTS** (or ElevenLabs/Azure/AWS) for audio narration
 - **Virtual environment** (.venv)
 
 ## Setup
@@ -65,8 +75,9 @@ cd backend && uvicorn main:app --reload
 This project is in early development. Each component is being developed independently:
 - Backend API: RESTful endpoints
 - LLM Integration: Story generation with Claude
-- Database: Schema design and migrations
+- Database: Schema design and migrations (✅ **completed with Milano seed data**)
 - Geolocation: POI and location services
+- TTS: Audio narration for hands-free experience (✅ **base implementation ready**)
 
 ## Git Workflow
 

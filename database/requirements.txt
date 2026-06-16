@@ -1,0 +1,17 @@
+# Database dependencies for Storyteller
+#
+# Install with: pip install -r requirements.txt
+
+# Core database
+SQLAlchemy>=2.0.0
+psycopg2-binary>=2.9.0
+alembic>=1.12.0
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Optional: for enhanced geospatial queries
+# geoalchemy2>=0.14.0
+
+# Optional: for PostgreSQL connection pooling
+# psycopg2-pool>=1.1
